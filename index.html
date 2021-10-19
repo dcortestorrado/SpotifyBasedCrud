@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Taller Crud</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Hello, world!</title>
+    </head>
+
+    <body>
+        <div class="container my-4 mx-auto">
+            <header>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="img/spotify.jpg" alt="logo-spotify" class="logo_spotify">
+                    <p class="p_head">Regístrate gratis para escuchar</p>
+                    <button type="button" class="boton_fb">Registrarte con Facebook</button>
+                    <span class="d-flex my-4 flex-row"><hr><p>o</p><hr></span>
+                </div>
+                
+            </header>
+            <!-- Formulario-->
+            <main>
+                <form class="d-flex flex-column" id="mi_formulario">
+
+                    <div class="mb-3">
+                        <h4 id="titulo_accion" class="text-center"></h4>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo-electronico" class="form-label">¿Cuál es tu correo electrónico?</label>
+                        <input type="email" class="form-control border border-1 border-dark" id="correo-electronico" placeholder="Introduce tu correo electrónico.">
+                        <a href="#" id="a_usar">Usar el número de teléfono.</a>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo-electronico-vfy" class="form-label">Confirma el correo electrónico.</label>
+                        <input type="email" class="form-control border border-1 border-dark" id="correo-electronico-vfy" placeholder="Vuelve a introducir tu correo electrónico.">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contrasena" class="form-label">Crea una contraseña</label>
+                        <input type="password" class="form-control border border-1 border-dark" id="contrasena" placeholder="Crea una contraseña">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nombre-usuario" class="form-label">¿Cómo quieres que te llamemos?</label>
+                        <input type="text" class="form-control border border-1 border-dark" id="nombre-usuario" placeholder="Introduce un nombre de perfil.">
+                    </div>
+
+                    <button type="button" class="boton-registro" id="btn-registro" onclick="guardarInfo()">Registrarte</button>
+
+                </form>
+                <!-- Tabla de datos -->
+                <h4 class="text-center my-5">Datos de registro</h4>
+                <div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data-usuario"></tbody>
+                    </table>
+                </div>
+
+            </main>
+
+        </div>
+    
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

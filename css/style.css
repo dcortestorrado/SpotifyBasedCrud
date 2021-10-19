@@ -1,0 +1,79 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+*{
+    font-family: 'Gotham', sans-serif;
+}
+
+.container {
+    max-width: 450px;
+    height: 100vh;
+}
+
+.logo_spotify{
+    width: 130px;
+    height: 40px;
+}
+
+.p_head{
+    
+    color: #000;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.boton_fb{
+    border-radius: 50px;
+    font-family: 'Gotham Black', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    background-color: #4279df;
+    outline: none;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 10px;
+}
+
+
+.boton-registro{
+    border-radius: 50px;
+    font-family: 'Gotham Black', sans-serif;
+    color: #000;
+    font-size: 15px;
+    background-color: #1ed760;
+    outline: none;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px auto;
+    width: 45%;
+}
+
+hr {
+    width: 165px;
+    margin: 12px;
+    border: 0.5px solid #bdb9b93f;
+}
+
+i {
+    cursor: pointer;
+}
+
+label {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 11.5px;
+}
+
+::placeholder{
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+div a {
+    font-size: 10px;
+    color: #117a37 !important;
+    text-decoration: underline;
+}
+
